@@ -7,7 +7,7 @@
 </div></div>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.php">Beranda</a>
+  <a href="index.html">Beranda</a>
   <a href="koperasi.php">Koperasi</a>
   <a href="keranjang.php">Keranjang</a>
   <a href="checkout.php">Pembayaran</a>
