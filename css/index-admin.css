@@ -1,0 +1,181 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #063;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #030;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #030;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background:url(../gambar/padi.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  transition: all .5s;
+}
+
+/***************************** khusus button *******************************/
+     .button-hijau{
+        background-color:  #27ae60 ;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: none;
+ /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 15px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+      }
+
+      .button{
+        /*ubah warna background*/
+        background-color: #7942ee;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: none;
+ /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 15px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+      }
+      .button:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: #6124e3;
+      }
+
+      /***************************** khusus table *******************************/
+
+.tablee {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #000;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+    /***************************** data pembayarab *******************************/
+
+.column {
+  float: left;
+  width: 50%;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column3 {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}

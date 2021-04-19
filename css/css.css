@@ -1,0 +1,658 @@
+
+/*********************************** LOGIN************************************/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  @media only screen and (max-width: 600px) {
+  input[type=text]{
+    width: 100%;
+    display: block;
+  }
+}
+  
+  /* Set a style for all buttons */
+  .buttonn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .buttonn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #ADFF2F;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+    .modal-content{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  
+/***********************************SLIDER FOTO ************************************/
+ /* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/**********************************SEJARAH************************************/
+ .column {
+  float: left;
+  width: 50%;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 600px) {
+
+
+    
+      .column1 { 
+        display: block;
+        width: 100%;
+    }
+
+    .row1{
+      display: block;
+      width: 100%;
+
+    }
+}
+
+
+
+h2{
+  margin-top: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+p{
+  margin-top: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
+  line-height: 2em;
+  
+  text-align: justify;
+}
+
+/***************************** PRODUK KAMI *******************************/
+.column1 {
+  float: left;
+  width: 25%;
+
+  height:300px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}  
+
+ .column {
+  float: left;
+  width: 50%;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+
+/***************************** button ***********************/
+
+btn {position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+/***************************** Footer ***********************/
+a{
+  text-decoration: none;
+  outline: none;
+}
+.footer-main-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: #272727;
+  padding: 20px 0px;
+}
+.footer-social-icons{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-social-icons ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background: #32CD32;
+}
+.footer-social-icons ul li a{
+  color: #272727;
+  font-size: 30px;
+  display: block;
+}
+.footer-social-icons ul li a i{
+  line-height: 43px;
+}
+.footer-social-icons ul li a i img{
+  height: auto;
+  width: 55%;
+}
+.footer-menu-satu{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+.footer-menu-satu ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-menu-satu ul li{
+  display: inline-block;
+  margin: 0px 15px;
+}
+.footer-menu-satu ul li a{
+  font-family: arial;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer-alamat{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/***************************** Alert ***********************/
+ .success {
+  background-color: #ddffdd;
+  border-left: 6px solid #4CAF50;
+  width: 50%;
+}
+
+/*************************** Button  ***********************/
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.success {background-color: #4CAF50; } /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+/*************************** tab-Sejarah ***********************/
+
+/********** tab-Sejarah - visi misi - organisasi ******/
+.tab {
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/********** tab-Sejarah  ******/
+.tab-border{
+  font-size: 20px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-style: groove;
+  border-width: 7px;
+  border-color: coral;
+  color: #fff;
+  background-color: #000;
+  font-family: arial;
+}
+
+.containerr {
+  position: ;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+}
+
+.containerr .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 60%;
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5em;
+  font-size: 18px;
+
+}
+
+/********* visi misi ******/
+.column-sejarah1 {
+  
+  width: 20%;
+  padding: 10px;
+  
+  height: 430px; /* Should be removed. Only for demonstration */
+}
+
+/*.column-sejarah2 {
+ 
+  width: 20%;
+
+  padding: 10px;
+  height: 430px; /* Should be removed. Only for demonstration */
+}*/
+
+/* Clear floats after the columns */
+.row-sejarah:after {
+  content: "";
+  display: table;
+  clear: both;}
+
+.visi{
+  margin-top: 20px;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin-right: 15px;
+  text-align: justify;
+}
+p{
+  margin-top: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
+  line-height: 2em;
+  
+  text-align: justify;
+}
+
+/***************************** TOKO.PHP *******************************/
+.columnn {
+  float: left;
+  width: 25%;
+  height:300px;
+  border-color: #ddd;
+
+}
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #000;
+  border-color: #ddd;
+}   
+
+/***************************** khusus table *******************************/
+.tablee {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+
+/***************************** khusus button *******************************/
+     .button-hijau{
+        background-color:  #27ae60 ;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: none;
+ /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 15px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+      }
+
+      .button{
+        /*ubah warna background*/
+        background-color: #7942ee;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: none;
+ /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 15px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+      }
+      .button:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: #6124e3;
+      }
+
+/***************************** nota *******************************/
+
+      /* Create three equal columns that floats next to each other */
+.column3 {
+  float: left;
+  width: 31%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*************************** img responsive *************************/
+.img-responsive {
+  width: 50%;
+  height: 50%;
+}
